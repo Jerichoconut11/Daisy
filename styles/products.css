@@ -80,8 +80,9 @@
   border-radius: 50px;
   padding: 8px 35px 8px 35px;
   border: none;
-  background-color: rgb(231, 231, 3);
+  background-color: rgb(75, 75, 244);
   cursor: pointer;
   font-weight: 500;
   font-size: 15px;
+  color: white;
 }

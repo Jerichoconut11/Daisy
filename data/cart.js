@@ -1,0 +1,11 @@
+export const cart = [];
+
+export function addToCart(productId, quantity) {
+  let cartItem = cart.find((item) => item.productId === productId);
+
+  if (cartItem) {
+    cartItem.quantity += quantity;
+  } else {
+    cart.push({ productId, quantity });
+  }
+}

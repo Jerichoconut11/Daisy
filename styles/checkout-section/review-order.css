@@ -1,0 +1,48 @@
+main {
+  padding: 0px 30px 0 30px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
+
+.delivery-image {
+  display: flex;
+  width: 200px;
+}
+.delivery-image > img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.delivery-details {
+  display: flex;
+  grid-template-columns: 1fr auto;
+}
+
+.checkout-products {
+  display: flex;
+  padding: 18px;
+}
+.delivery-section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.delivery-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

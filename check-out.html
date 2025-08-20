@@ -3,9 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/checkout-section/checkout-header.css" />
+    <link rel="stylesheet" href="styles/checkout-section/review-order.css" />
+    <title>Daisy - Checkout Section</title>
   </head>
   <body>
-    <p>This is the check out section :D</p>
+    <div class="checkout-header">
+      <div class="checkout-left-section">
+        <div>
+          <div class="home-page"><a href="daisy.html">Daisy</a></div>
+        </div>
+      </div>
+
+      <div class="checkout-middle-section">
+        <div class="checkout-text">Checkout (0)</div>
+      </div>
+
+      <div class="checkout-right-section">
+        <p>Lock</p>
+      </div>
+    </div>
+    <main>
+      <div class="checkout-grid">
+        <div class="checkout-container">
+          <div class="delivery-details">
+            <div class="checkout-products">
+              <div class="delivery-image">
+                <img src="images/products/ankle-socks.webp" alt="" />
+              </div>
+              <div>
+                <div class="product-name">Ankle Socks - Comfort</div>
+                <div class="product-price">₱650</div>
+                <div class="product-quantity">Quantity: 2</div>
+                <div class="edit-button">
+                  <button>Update</button>
+                  <button>Delete</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="delivery-section">
+              <div>Choose a delivery option:</div>
+              <div class="delivery-option">
+                <label for="">Tuesday, June 21</label>
+                <p>FREE Shipping</p>
+                <input type="radio" />
+              </div>
+              <div>
+                <label for="">Wednesday, June 15</label>
+                <p>₱40 - shipping fee</p>
+                <input type="radio" />
+              </div>
+              <div>
+                <label for="">Monday, June 13</label>
+                <p>₱72 - shipping fee</p>
+                <input type="radio" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-section">
+          <div class="payment-title">Order Summary</div>
+          <div class="total-items">Items(5): ₱1187.23</div>
+          <div class="shipping">Shipping: ₱45</div>
+          <div class="total-b-tax">Total before tax: ₱1232.23</div>
+          <div class="estimated-tax">Estimated tax (10%): ₱11.27</div>
+          <div class="total-order">Order Total: ₱1234.23</div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/scripts/checkout.js"></script>
   </body>
 </html>

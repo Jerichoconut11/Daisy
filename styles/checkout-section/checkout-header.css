@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-bottom: 64px;
+}
+
+.checkout-left-section {
+  display: flex;
+  font-size: 40px;
+  color: black;
+  width: 200px;
+}
+.home-page > a {
+  text-decoration: none;
+  color: black;
+}
+
+.checkout-middle-section {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.checkout-text {
+  font-size: 22px;
+}
+
+.checkout-right-section {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+}

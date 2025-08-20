@@ -7,6 +7,13 @@ export const products = [
     pricePeso: 500,
   },
   {
+    id: "7728985249",
+    image: "images/products/complete-set-chessboard.jpg",
+    name: "Chess Board - Complete Set",
+    rating: { rate: 5, count: 338 },
+    pricePeso: 1300,
+  },
+  {
     id: "2622579470",
     image: "images/products/mens-loafer.webp",
     name: "Mens loafers - Size 44",
@@ -19,6 +26,13 @@ export const products = [
     name: "Womens Trouser - Medium",
     rating: { rate: 4.5, count: 117 },
     pricePeso: 950,
+  },
+  {
+    id: "7728985249",
+    image: "images/products/High-quality-basketball.jpg",
+    name: "High Quality Basketball - Adult Size",
+    rating: { rate: 5, count: 8457 },
+    pricePeso: 3459,
   },
   {
     id: "1678296266",

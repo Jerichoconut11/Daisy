@@ -1,48 +1,96 @@
 main {
   padding: 0px 30px 0 30px;
+  margin: 0 140px 0 140px;
 }
 
-.checkout-grid {
+.checkout-section-grid {
   display: grid;
-  grid-template-columns: 1fr 400px;
-}
-
-.delivery-image {
-  display: flex;
-  width: 200px;
-}
-.delivery-image > img {
-  width: 150px;
-  object-fit: contain;
+  grid-template-columns: 1fr 350px;
+  align-items: start;
+  justify-content: center;
 }
 
 .checkout-container {
-  display: flex;
-  justify-content: center;
-  margin-right: 15px;
-}
-
-.delivery-details {
-  display: flex;
-  grid-template-columns: 1fr auto;
-}
-
-.checkout-products {
-  display: flex;
+  border: 1px solid rgb(197, 195, 195);
   padding: 18px;
 }
-.delivery-section {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-}
-.delivery-option {
-  display: flex;
-  flex-direction: column;
+
+.checkout-grid {
+  width: 700px;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  gap: 30px;
 }
 
-.payment-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.process-date {
+  color: darkgreen;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.product-date {
+  margin-bottom: 20px;
+}
+
+.product-image,
+.delivery-option,
+.product-details {
+  width: 100%;
+}
+
+.product-name {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  color: rgb(183, 3, 3);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.span-update,
+.span-delete {
+  color: rgb(84, 84, 248);
+  margin-left: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.span-update:hover,
+.span-delete:hover {
+  color: rgb(237, 72, 43);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+}
+
+.delivery-option-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(69, 67, 67);
+}
+
+.delivery-date,
+.delivery-fee {
+  width: auto;
+  font-size: 14px;
+}
+
+.delivery-fee {
+  margin-bottom: 15px;
+}
+.span-shipping {
+  color: grey;
+}
+
+.span-date {
+  color: green;
+  font-weight: 500;
 }

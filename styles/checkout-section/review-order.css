@@ -8,6 +8,7 @@ main {
   grid-template-columns: 1fr 350px;
   align-items: start;
   justify-content: center;
+  gap: 20px;
 }
 
 .checkout-container {
@@ -86,11 +87,58 @@ main {
 .delivery-fee {
   margin-bottom: 15px;
 }
+
 .span-shipping {
   color: grey;
 }
 
 .span-date {
+  font-weight: 600;
+  font-size: 14px;
   color: green;
+}
+
+.order-summary-title {
+  margin-bottom: 15px;
+  font-size: 22px;
   font-weight: 500;
+}
+
+.order-summary {
+  border: 1px solid rgb(197, 195, 195);
+  padding: 18px 16px 20px 16px;
+}
+
+.payment-summary-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-bottom: 5px;
+}
+
+.row-gap {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.gap-total {
+  padding: 15px 0;
+}
+
+.total-order,
+.total-price {
+  color: darkred;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(237, 237, 7);
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(26, 25, 25);
+  margin: 12px 0;
 }

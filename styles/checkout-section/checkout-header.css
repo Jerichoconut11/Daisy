@@ -31,7 +31,13 @@
 }
 
 .checkout-text {
-  font-size: 22px;
+  font-size: 20px;
+  color: rgb(57, 155, 188);
+}
+
+.username {
+  font-size: 20px;
+  color: orangered;
 }
 
 .checkout-right-section {

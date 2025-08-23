@@ -11,11 +11,11 @@ main {
   gap: 20px;
 }
 
-.checkout-container {
+.border-container {
   border: 1px solid rgb(197, 195, 195);
   padding: 18px;
+  margin-bottom: 1rem;
 }
-
 .checkout-grid {
   width: 700px;
   display: grid;

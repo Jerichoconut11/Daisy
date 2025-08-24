@@ -1,4 +1,4 @@
-import { cart } from "../data/cart.js";
+import { cart, removeCartItem } from "../data/cart.js";
 import { products } from "../data/products.js";
 
 const cartSummary = cart
@@ -9,7 +9,7 @@ const cartSummary = cart
 
     if (!matchingItem) return "";
     return `
-    <div class="border-container">
+    <div class="border-container js-cart-item-container-${matchingItem.id}">
           <div class="process-date">
             Delivery date: Monday - September 1, 2025
           </div>
@@ -22,13 +22,13 @@ const cartSummary = cart
               />
             </div>
             <div class="product-details">
-              <div class="">${matchingItem.name} Comfort</div>
+              <div class="">${matchingItem.name}</div>
               <div class="product-price">₱${matchingItem.pricePeso}</div>
               <div class="product-quantity">
                 <span>Quantity: </span>
                 <span class="span-quanity-count">${checkoutItem.quantity}</span>
                 <span class="span-update">Update</span>
-                <span class="span-delete">Delete</span>
+                <span class="span-delete" data-product-id="${matchingItem.id}">Delete</span>
               </div>
             </div>
 
@@ -72,6 +72,21 @@ const cartSummary = cart
         </div>
 `;
   })
-  .join("");
 
-document.querySelector(".checkout-container").innerHTML = cartSummary;
+  .join("");
+const checkOutContainer = document.querySelector(".checkout-container");
+checkOutContainer.innerHTML = cartSummary;
+
+const deleteItem = document.querySelectorAll(".span-delete");
+deleteItem.forEach((link) => {
+  link.addEventListener("click", () => {
+    const productId = link.dataset.productId;
+    removeCartItem(productId);
+
+    const container = document.querySelector(
+      `.js-cart-item-container-${productId}`
+    );
+
+    container.remove();
+  });
+});

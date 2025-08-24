@@ -3,6 +3,10 @@ export const cart = [
     productId: "0270851834",
     quantity: 1,
   },
+  {
+    productId: "1728985249",
+    quantity: 1,
+  },
 ];
 
 export function addToCart(productId, quantity) {

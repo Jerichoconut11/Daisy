@@ -28,7 +28,7 @@ export const products = [
     pricePeso: 950,
   },
   {
-    id: "7728985249",
+    id: "1728985249",
     image: "images/products/High-quality-basketball.jpg",
     name: "High Quality Basketball - Adult Size",
     rating: { rate: 5, count: 8457 },
